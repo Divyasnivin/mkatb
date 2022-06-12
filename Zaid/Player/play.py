@@ -27,6 +27,7 @@ from pytgcalls.types.input_stream import AudioPiped
 from youtubesearchpython import VideosSearch
 import yt_dlp
 import yt_dlp
+from strings.filters import command
 
 ZAID_IMGS = [
     "Process/ImageFont/LightGreen.png",
