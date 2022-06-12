@@ -131,7 +131,7 @@ async def generate_cover(thumbnail, title, userid, ctitle):
 
 
     
-@Client.on_message(command(["تشغيل", f"شغل"]) & other_filters)
+@Client.on_message(command(["تشغيل", f"شغل", "تشغيلل"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
@@ -143,9 +143,9 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("⏭️", "skip"),
                       InlineKeyboardButton("🔼", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton(text="🥇 المطور ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton(text=" المطور ", url=f"https://t.me/{UPDATES_CHANNEL}"),
                   ],[
-                      InlineKeyboardButton("مسح.", callback_data="cls")],
+                      InlineKeyboardButton("مسح", callback_data="cls")],
                   ]
              )
     if m.sender_chat:
